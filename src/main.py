@@ -7,7 +7,6 @@ import json
 import os
 import sys
 from datetime import datetime
-import csv
 from pathlib import Path
 from sklearn.datasets import fetch_20newsgroups
 
@@ -345,7 +344,6 @@ def main():
     finally:
         # Final save
         save_annotations(annotation_data, annotator_name, mode)
-        export_to_csv(annotation_data, annotator_name, mode)
         
         suffix = '_reannotation' if mode == 'reannotate' else ''
         prefix = '' if mode == 'reannotate' else "annotations_"

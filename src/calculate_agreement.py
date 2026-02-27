@@ -204,21 +204,7 @@ def main():
         print(f"\nTotal overlapping documents: {len(overlapping)}")
         print(f"Documents with disagreement: {disagreement_count}")
         print(f"Documents with full agreement: {len(overlapping) - disagreement_count}")
-    else:
-        # Fall back to pairwise Cohen's Kappa
-        print("\nCalculating pairwise Cohen's Kappa for all annotator pairs:")
-        annotators = list(all_data.keys())
-        for i in range(len(annotators)):
-            for j in range(i + 1, len(annotators)):
-                print(f"\n{annotators[i]} vs {annotators[j]}:")
-                # Filter overlapping for this pair
-                pair_overlapping = {}
-                for doc_id, anns in overlapping.items():
-                    pair_anns = [(a, c) for a, c in anns if a in [annotators[i], annotators[j]]]
-                    if len(pair_anns) == 2:
-                        pair_overlapping[doc_id] = pair_anns
 
 
 if __name__ == "__main__":
     main()
-

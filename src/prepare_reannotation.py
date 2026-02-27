@@ -91,17 +91,13 @@ def save_reannotation_assignments(assignments):
     print(f"\nAssignments saved to {filename}")
 
 
-def create_reannotation_files(assignments, all_data):
+def create_reannotation_files(assignments):
     for annotator, assignment in assignments.items():
         filename = SCRIPT_DIR / f"reannotate_{annotator}.json"
         
         # Get the documents to re-annotate
         doc_ids = assignment['document_ids']
         source_annotator = assignment['reannotate_from']
-        
-        # Find the actual document info
-        source_annotations = all_data[source_annotator]['annotations']
-        docs_to_annotate = [ann for ann in source_annotations if ann['document_id'] in doc_ids]
         
         data = {
             'annotator': annotator,
@@ -137,7 +133,7 @@ def display_statistics(all_data, assignments):
     total_with_overlap = total_unique + total_overlap
     overlap_percentage = (total_overlap / total_with_overlap) * 100
     
-    print(f"\nOVERALL:")
+    print("\nOVERALL:")
     print(f"  - Unique documents: {total_unique}")
     print(f"  - Overlap annotations: {total_overlap}")
     print(f"  - Total annotations: {total_with_overlap}")
@@ -182,7 +178,7 @@ def main():
     
     # Save assignments
     save_reannotation_assignments(assignments)
-    create_reannotation_files(assignments, all_data)
+    create_reannotation_files(assignments)
     
     # Display statistics
     display_statistics(all_data, assignments)
