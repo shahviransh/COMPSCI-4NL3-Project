@@ -1,0 +1,11 @@
+name: annotation
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.7
+  - scikit-learn>=1.0.0
+  - numpy>=1.20.0
+  - pip
+  - pip:
+    - krippendorff>=0.6.0
