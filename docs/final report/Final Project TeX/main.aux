@@ -1,0 +1,57 @@
+\relax 
+\bibstyle{acl_natbib}
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Lang95}
+\citation{Joachims1998}
+\citation{Rennie2003Complement}
+\citation{Sebastiani2002}
+\citation{Devlin2019BERT}
+\citation{Liu2019RoBERTa}
+\citation{Warner2024ModernBERT}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{1}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Dataset}{1}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Features and Inputs}{1}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Multi-Granularity TF-IDF (Model 1)}{1}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Tokenizer Inputs (Models 2 and 3)}{1}{subsection.4.2}\protected@file@percent }
+\citation{Joachims1998}
+\citation{Liu2019RoBERTa}
+\citation{Warner2024ModernBERT}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Implementation}{2}{section.5}\protected@file@percent }
+\newlabel{sec:impl}{{5}{2}{Implementation}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Baselines}{2}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Model 1: Multi-Granularity TF-IDF + LinearSVC (Abdul-Hadi)}{2}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Model 2: Fine-tuned RoBERTa-large (Eduardo)}{2}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Model 3: ModernBERT-large (Viransh)}{2}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Results and Evaluation}{2}{section.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces  Test-set performance on 7,532 held-out documents. M2 is our best model. All three beat the trained LR baseline by 2--7 pp accuracy.}}{2}{table.caption.1}\protected@file@percent }
+\newlabel{tab:our-results}{{1}{2}{Test-set performance on 7,532 held-out documents. M2 is our best model. All three beat the trained LR baseline by 2--7 pp accuracy}{table.caption.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Our Models vs.\ Baselines}{2}{subsection.6.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Confusion matrix -- LR + TF-IDF trained baseline. Confusion is strongest within related sub-domains such as \texttt  {comp.*}, religion, and politics categories.}}{3}{figure.caption.4}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:confusion-lr}{{1}{3}{Confusion matrix -- LR + TF-IDF trained baseline. Confusion is strongest within related sub-domains such as \texttt {comp.*}, religion, and politics categories}{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Comparison to Classmates}{3}{subsection.6.2}\protected@file@percent }
+\newlabel{sec:classmate-discussion}{{6.2}{3}{Comparison to Classmates}{table.caption.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{On zhongx22's results.}{3}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Error Analysis}{3}{section.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Confusion matrix -- Multi-TF-IDF + LinearSVC (M1). Off-diagonal mass concentrates in the \texttt  {comp.*} sub-cluster and the religion/politics overlap.}}{3}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:confusion-m1}{{2}{3}{Confusion matrix -- Multi-TF-IDF + LinearSVC (M1). Off-diagonal mass concentrates in the \texttt {comp.*} sub-cluster and the religion/politics overlap}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Recommendations}{3}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusions}{3}{section.8}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces  Full comparison across all groups. Our group and khafam1/cruza7 report test-set scores on the same cleaned dataset. zhongx22's figures are validation-set scores obtained \emph  {without} \texttt  {remove=('headers','footers','quotes')}; see text.}}{4}{table.caption.2}\protected@file@percent }
+\newlabel{tab:classmate-results}{{2}{4}{Full comparison across all groups. Our group and khafam1/cruza7 report test-set scores on the same cleaned dataset. zhongx22's figures are validation-set scores obtained \emph {without} \texttt {remove=('headers','footers','quotes')}; see text}{table.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Confusion matrix -- Fine-tuned RoBERTa-large (M2). Compared with M1 and the LR baseline, off-diagonal mass is reduced in several closely related class pairs.}}{4}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:confusion-m2}{{3}{4}{Confusion matrix -- Fine-tuned RoBERTa-large (M2). Compared with M1 and the LR baseline, off-diagonal mass is reduced in several closely related class pairs}{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Confusion matrix -- ModernBERT-large (M3). Contextual representations reduce confusion in related categories compared to M1.}}{4}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:confusion-m3}{{4}{4}{Confusion matrix -- ModernBERT-large (M3). Contextual representations reduce confusion in related categories compared to M1}{figure.caption.7}{}}
+\bibdata{custom}
+\bibcite{Devlin2019BERT}{{1}{2019}{{Devlin et~al.}}{{Devlin, Chang, Lee, and Toutanova}}}
+\bibcite{Joachims1998}{{2}{1998}{{Joachims}}{{}}}
+\bibcite{Lang95}{{3}{1995}{{Lang}}{{}}}
+\bibcite{Liu2019RoBERTa}{{4}{2019}{{Liu et~al.}}{{Liu, Ott, Goyal, Du, Joshi, Chen, Levy, Lewis, Zettlemoyer, and Stoyanov}}}
+\bibcite{Rennie2003Complement}{{5}{2003}{{Rennie et~al.}}{{Rennie, Shih, Teevan, and Karger}}}
+\bibcite{Sebastiani2002}{{6}{2002}{{Sebastiani}}{{}}}
+\bibcite{Warner2024ModernBERT}{{7}{2024}{{Warner et~al.}}{{Warner, Chaffin, Clavié, Weller, Hallstr\"{o}m, Taghadouini, Galalgher, Biswas, Ladhak, Aarsen, Cooper, Adams, Howard, and Poli}}}
+\gdef \@abspage@last{5}

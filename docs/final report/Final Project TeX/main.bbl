@@ -1,0 +1,57 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Devlin et~al.(2019)Devlin, Chang, Lee, and
+  Toutanova}]{Devlin2019BERT}
+Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019.
+\newblock {BERT}: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock In \emph{Proceedings of the 2019 Conference of the North {A}merican
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies}, pages 4171--4186. Association for Computational Linguistics.
+
+\bibitem[{Joachims(1998)}]{Joachims1998}
+Thorsten Joachims. 1998.
+\newblock Text categorization with support vector machines: Learning with many
+  relevant features.
+\newblock In \emph{Proceedings of the 10th European Conference on Machine
+  Learning (ECML)}, pages 137--142. Springer.
+
+\bibitem[{Lang(1995)}]{Lang95}
+Ken Lang. 1995.
+\newblock Newsweeder: Learning to filter netnews.
+\newblock In \emph{Proceedings of the 12th International Conference on Machine
+  Learning (ICML)}, pages 331--339. Morgan Kaufmann.
+
+\bibitem[{Liu et~al.(2019)Liu, Ott, Goyal, Du, Joshi, Chen, Levy, Lewis,
+  Zettlemoyer, and Stoyanov}]{Liu2019RoBERTa}
+Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer
+  Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov. 2019.
+\newblock {RoBERTa}: A robustly optimized {BERT} pretraining approach.
+\newblock \emph{arXiv preprint arXiv:1907.11692}.
+
+\bibitem[{Rennie et~al.(2003)Rennie, Shih, Teevan, and
+  Karger}]{Rennie2003Complement}
+Jason D.~M. Rennie, Lawrence Shih, Jaime Teevan, and David~R. Karger. 2003.
+\newblock Tackling the poor assumptions of naive {B}ayes text classifiers.
+\newblock In \emph{Proceedings of the 20th International Conference on Machine
+  Learning (ICML)}, pages 616--623.
+
+\bibitem[{Sebastiani(2002)}]{Sebastiani2002}
+Fabrizio Sebastiani. 2002.
+\newblock \href {https://doi.org/10.1145/505282.505283} {Machine learning in
+  automated text categorization}.
+\newblock \emph{{ACM} Computing Surveys}, 34(1):1--47.
+
+\bibitem[{Warner et~al.(2024)Warner, Chaffin, Clavié, Weller, Hallstr\"{o}m,
+  Taghadouini, Galalgher, Biswas, Ladhak, Aarsen, Cooper, Adams, Howard, and
+  Poli}]{Warner2024ModernBERT}
+Benjamin Warner, Antoine Chaffin, Benjamin Clavié, Orion Weller, Oskar
+  Hallstr\"{o}m, Said Taghadouini, Alexis Galalgher, Raja Biswas, Faisal
+  Ladhak, Tom Aarsen, Nathan Cooper, Griffin Adams, Jeremy Howard, and Iacopo
+  Poli. 2024.
+\newblock Smarter, better, faster, longer: A modern bidirectional encoder for
+  fast, memory efficient, and long context finetuning and inference.
+\newblock \emph{arXiv preprint arXiv:2412.13663}.
+
+\end{thebibliography}

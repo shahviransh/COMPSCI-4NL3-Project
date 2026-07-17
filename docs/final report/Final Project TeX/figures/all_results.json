@@ -1,0 +1,50 @@
+[
+  {
+    "model": "Random Baseline",
+    "accuracy": 0.05045140732873075,
+    "f1_macro": 0.04993454222189058,
+    "f1_weighted": 0.05066715956025549,
+    "precision_macro": 0.05023248194904648,
+    "recall_macro": 0.049928861516958745
+  },
+  {
+    "model": "Majority Class Baseline",
+    "accuracy": 0.05297397769516728,
+    "f1_macro": 0.005030891438658429,
+    "f1_weighted": 0.005330126617165993,
+    "precision_macro": 0.0026486988847583643,
+    "recall_macro": 0.05
+  },
+  {
+    "model": "LR + TF-IDF (baseline)",
+    "accuracy": 0.6840148698884758,
+    "f1_macro": 0.6670721938761993,
+    "f1_weighted": 0.6796918516131483,
+    "precision_macro": 0.6856293542439726,
+    "recall_macro": 0.6689446886322928
+  },
+  {
+    "model": "Multi-granularity TF-IDF + LinearSVC",
+    "accuracy": 0.7053903345724907,
+    "f1_macro": 0.6930962702387986,
+    "f1_weighted": 0.7038350577261911,
+    "precision_macro": 0.7025927086579052,
+    "recall_macro": 0.6925799576024517
+  },
+  {
+    "model": "Fine-tuned RoBERTa-large",
+    "accuracy": 0.7375199150292087,
+    "f1_macro": 0.7262358892731062,
+    "f1_weighted": 0.7386226775080208,
+    "precision_macro": 0.7330876266913051,
+    "recall_macro": 0.724735793234865
+  },
+  {
+    "model": "ModernBERT-large (4*H100)",
+    "accuracy": 0.7245087626128518,
+    "f1_macro": 0.7151236309941956,
+    "f1_weighted": 0.7259507551984276,
+    "precision_macro": 0.7230936994756142,
+    "recall_macro": 0.7129727066521239
+  }
+]
